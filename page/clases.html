@@ -23,6 +23,43 @@
 
   <main>
     <section>
+
+
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+      </head>
+      <body>
+        
+      </body>
+      </html>
+      <!-- -->
+      <!-- (Prueba) Combo de búsqueda de clases -->
+      <!-- Buscador de clases por texto -->
+      <label for="filtroClases"><strong>Buscar en las clases:</strong></label>
+      <input type="text" id="filtroClases" placeholder="Escribe una palabra clave..." onkeyup="filtrarClases()">
+
+      <script>
+      function filtrarClases() {
+          const filtro = document.getElementById('filtroClases').value.toLowerCase();
+          const lista = document.querySelectorAll('ul li, ul p');
+
+          lista.forEach(el => {
+            // Limpia resaltados anteriores
+            el.innerHTML = el.textContent;
+            if (filtro && el.textContent.toLowerCase().includes(filtro)) {
+              // Resalta el texto buscado
+              const regex = new RegExp(`(${filtro})`, 'gi');
+              el.innerHTML = el.textContent.replace(regex, '<span class="resaltado-busqueda">$1</span>');
+            }
+          });
+        }
+      </script>
+      <!-- Fin de Busqueda -->
       <h2>Listado de Clases</h2>
       <ul>
         <li><strong>Clase 0 - Pre Clase:</strong>  </li>

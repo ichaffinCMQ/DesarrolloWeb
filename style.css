@@ -35,3 +35,8 @@ a:visited {
     font-size: 1em; /* Cambia el tamaño de la fuente */
     font-weight: normal; /* Cambia el grosor de la fuente */
     text-align: justify; /* Justifica el texto */}
+
+.resaltado-busqueda {
+  background-color: yellow;
+  font-weight: bold;
+}
