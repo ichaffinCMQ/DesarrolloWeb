@@ -1,0 +1,37 @@
+/* Esto es un comentario en CSS */
+
+/* Cambiar el color del título (h1) solamente */
+h1 {
+    color: darkblue;
+    font-size: 2em; /* Cambia el tamaño de la fuente */
+    font-weight: bold; /* Cambia el grosor de la fuente */
+    text-align: center; /* Centra el texto */}
+
+h2 {
+    color: darkred;
+    font-size: 1.5em; /* Cambia el tamaño de la fuente */
+    font-weight: bold; /* Cambia el grosor de la fuente */}
+
+p {
+    color: gray;
+    font-size: 1em; /* Cambia el tamaño de la fuente */
+    font-weight: normal; /* Cambia el grosor de la fuente */
+    text-align: justify; /* Justifica el texto */}
+
+a:visited {
+    color: rgb(129, 51, 129); /* Cambia el color de los enlaces visitados */}
+
+
+/* las Clases se definene con . (punto) ej:   Se usa para los estilos par aagrupar caracteristicas  */
+.textoDestacado {
+    color: violet;
+    font-size: 1em; /* Cambia el tamaño de la fuente */
+    font-weight: normal; /* Cambia el grosor de la fuente */
+    text-align: justify; /* Justifica el texto */}
+
+/* los ID se definen con # (numeral) ej:   Se usa para los estilos par aagrupar caracteristicas  */
+#identificador1 {
+    color: orange;
+    font-size: 1em; /* Cambia el tamaño de la fuente */
+    font-weight: normal; /* Cambia el grosor de la fuente */
+    text-align: justify; /* Justifica el texto */}
